@@ -804,6 +804,23 @@ h1, h2, h3, h4, h5, h6, figure {
   background: linear-gradient(top right, #52D681, #1FDEDB);
 }
 
+
+.btn-gradient2 {
+  background: -webkit-linear-gradient(top right, #9966ff, #1FDEDB);
+  background: -webkit-gradient(linear, right top, left bottom, from(#9966ff), to(#1FDEDB));
+  background: linear-gradient(top right, #9966ff, #1FDEDB);
+  color: rgba(255, 255, 255, 0.7);
+  border: none !important;
+}
+.btn-gradient2:hover, .btn-gradient:focus, .btn-gradient:active {
+  color: #fff;
+  background: -webkit-linear-gradient(top right, #52D681, #1FDEDB);
+  background: -webkit-gradient(linear, right top, left bottom, from(#52D681), to(#1FDEDB));
+  background: linear-gradient(top right, #52D681, #1FDEDB);
+}
+
+
+
 .btn-special {
   background: #52D681;
   color: #2f9051;
