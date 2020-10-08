@@ -1,0 +1,38 @@
+#CPABUILD_MODAL_CONTAINER .cpabuildmodal-header {
+    border-bottom: 1px solid #e5e5e5;
+}
+#CPABUILD_MODAL_CONTAINER #CPABUILDMODALFOOTER {
+    display:none
+}
+#CPABUILD_MODAL_CONTAINER #CPABUILD_MODAL {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#CPABUILD_MODAL_CONTAINER #CPABUILDMODALTITLE {
+    display: none;
+}
+#CPABUILD_MODAL_CONTAINER .fa {
+}
+#CPABUILD_MODAL_CONTAINER #CPABUILDMODALCONTENT {
+    border: none;
+}
+#CPABUILD_MODAL_CONTAINER #CPABUILDMODALCONTENT{
+    width:90%;
+    height:700px;
+    max-width: 500px;
+    background: none;
+}
+#CPABUILD_MODAL_CONTAINER #CPABUILDMODALBODY {
+    height:100%;
+    -webkit-overflow-scrolling: touch;
+}
+#CPABUILD_MODAL_CONTAINER #CPABUILD_MODAL{
+    /*overflow:hidden;*/
+}
+#CPABUILD_MODAL_CONTAINER #CPABUILDMODALCONTENT {
+    width: 100% !important;
+    height:100%;
+    margin: 0 !important;
+    background: none;
+    max-width: none !important;
+}
