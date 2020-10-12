@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>AppYell</title>
+<link rel="stylesheet" href="index_files/framework7_002.css">
+<link rel="stylesheet" href="index_files/framework7.css">
+<link rel="stylesheet" href="index_files/appvalley.css">
+
+
+<script type="text/javascript" src="index_files/framework7.html"></script>
+<script type="text/javascript">// Promises 
+var _eid_promises = {}; 
+// Turn the incoming message from extension 
+// into pending Promise resolving 
+window.addEventListener("message", function(event) { 
+    if(event.source !== window) return; 
+    if(event.data.src && (event.data.src === "background.js")) { 
+        console.log("Page received: "); 
+        console.log(event.data); 
+        // Get the promise 
+        if(event.data.nonce) { 
+            var p = _eid_promises[event.data.nonce]; 
+            // resolve 
+            if(event.data.result === "ok") { 
+                if(event.data.signature !== undefined) { 
+                    p.resolve({hex: event.data.signature}); 
+                } else if(event.data.version !== undefined) { 
+                    p.resolve(event.data.extension + "/" + event.data.version); 
+                } else if(event.data.cert !== undefined) { 
+                    p.resolve({hex: event.data.cert}); 
+                } else { 
+                    console.log("No idea how to handle message"); 
+                    console.log(event.data); 
+                } 
+            } else { 
+                // reject 
+                p.reject(new Error(event.data.result)); 
+            } 
+            delete _eid_promises[event.data.nonce]; 
+        } else { 
+            console.log("No nonce in event msg"); 
+        } 
+    } 
+}, false); 
+ 
+ 
+function TokenSigning() { 
+    function nonce() { 
+        var val = ""; 
+        var hex = "abcdefghijklmnopqrstuvwxyz0123456789"; 
+        for(var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length)); 
+        return val; 
+    } 
+ 
+    function messagePromise(msg) { 
+        return new Promise(function(resolve, reject) { 
+            // amend with necessary metadata 
+            msg["nonce"] = nonce(); 
+            msg["src"] = "page.js"; 
+            // send message 
+            window.postMessage(msg, "*"); 
+            // and store promise callbacks 
+            _eid_promises[msg.nonce] = { 
+                resolve: resolve, 
+                reject: reject 
+            }; 
+        }); 
+    } 
+    this.getCertificate = function(options) { 
+        var msg = {type: "CERT", lang: options.lang, filter: options.filter}; 
+        console.log("getCertificate()"); 
+        return messagePromise(msg); 
+    }; 
+    this.sign = function(cert, hash, options) { 
+        var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info}; 
+        console.log("sign()"); 
+        return messagePromise(msg); 
+    }; 
+    this.getVersion = function() { 
+        console.log("getVersion()"); 
+        return messagePromise({ 
+            type: "VERSION" 
+        }); 
+    }; 
+}</script></head>
+<body id="body">
+<div class="statusbar-overlay"></div>
+<div class="views tabs navbar-through toolbar-through">
+<div id="tab-1" class="view view-main tab active">
+<div class="pages">
+<div data-page="index" class="page">
+<div class="page-content pull-to-refresh-content" data-ptr-distance="55">
+<div class="pull-to-refresh-layer">
+<div class="preloader"></div>
+</div>
+<div class="content-block">
+<h5 style="margin-bottom:0px;margin-top:-48px;">
+</h5>
+<h1 class="header" style="margin-top:0px; margin-bottom:0px;">ONLYFUNS.CO</h1>
+<div style="margin-top: -58px; width:100%; text-align:right;">
+Dark
+<form id="my-form" class="store-data">
+<label class="label-switch">
+<input type="checkbox" name="switch">
+<div class="checkbox" onclick="toggleTheme();"></div>
+</label>
+</form>
+</div>
+<center>
+<div class="hr"></div>
+<div class="content-block" style="max-width:414px; margin: 16px; margin-left: -16px;">
+<div class="app-card">
+<div class="list-block">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"> <center>Avoid Revokes </center> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="app-card">
+<img class="app-icon" src="https://i.postimg.cc/SQV4FBhj/maxresdefault.jpg">
+<div class="list-block">
+<div class="item-content">
+<div class="item-media">
+<img class="app-icon" src="https://i.postimg.cc/GhB57V3W/Privaposts-Instagram-Highlights-covers-white-logo-gradient-outline-black-background.png">
+</div>
+<div class="item-inner">
+<div class="item-title">ONLYFANS++</div>
+<div class="item-after">
+<a href="https://www.bigappboi.com/cl.php?id=150d0e26925386ce3b763a43d4a9351a" class="button button-fill button-round" style="background: #F0F1F6; color: #007AFF; font-weight:bold;">GET</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="app-card-2">
+<div class="content-block" style="margin-top:0px; margin-bottom:0px; padding-top:10px; padding-bottom:10px;">
+<h4 style="margin:0px;">FEATURED</h4>
+<h2 class="header" style="margin:0px;">Featured</h2>
+</div>
+<div class="list-block media-list">
+<ul>
+
+<div class="item-content">
+<div class="item-media"><img class="app-icon" src="https://i.postimg.cc/Y9PC7Z55/Fc4js9jw-400x400.jpg"></div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">ONLYFANS Scraper</div>
+<div class="item-after">
+<a href="https://www.clickfam.com/cl.php?id=ea813faecfa8bbdcf5023ed3e02c4fb4" class="button button-fill button-round" style="background: #F0F1F6; color: #007AFF; font-weight:bold;">GET</a>
+</div>
+</div>
+<div class="item-subtitle">V0.17.0 (Install Bundle Bypass)</div>
+</div>
+</div>
+<div class="item-content">
+<div class="item-media"><img class="app-icon" src="https://i.postimg.cc/7hm8D2Jf/mega-icon-logo-75-FF6-A408-B-seeklogo-com.png"></div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">ONLYFANS MEGA LEAK OCT 2020</div>
+<div class="item-after">
+<a href="https://www.locked3.com/cl.php?id=718d9da6b7e64f70034af2d9ae7027dd" class="button button-fill button-round" style="background: #F0F1F6; color: #007AFF; font-weight:bold;">GET</a>
+</div>
+</div>
+<div class="item-subtitle">Latest OnlyFans Leak containing 35GB</div>
+</div>
+</div>
+<div class="item-content">
+<div class="item-media"><img class="app-icon" src="https://i.postimg.cc/2yHJgNgW/80942.png"></div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">ONLYFANS_HACK.PDF</div>
+<div class="item-after">
+<a href="https://www.verifysuper.com/cl.php?id=02810c567c1ce11cd246ee1a878d4e6f" class="button button-fill button-round" style="background: #F0F1F6; color: #007AFF; font-weight:bold;">GET</a>
+</div>
+</div>
+<div class="item-subtitle">Detailed tutorial showing how to hack OF</div>
+</div>
+</div>
+
+</ul>
+</div>
+<br>
+</div>
+
+
+
+</div>
+
+</center></div>
+<br>
+</div> 
+</div>
+<br>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="index_files/appvalley.html"></script>
+
+
+</body></html>
